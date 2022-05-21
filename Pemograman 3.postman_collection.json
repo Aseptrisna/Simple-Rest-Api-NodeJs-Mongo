@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "6f389427-f172-44d9-8f61-f95cf68b526d",
+		"name": "Pemograman 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9942741"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "Asep.iot@ubl.ac.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Regsiter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Asep Trisna Setiawan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Asep.iot@ubl.ac.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "telp",
+							"value": "082283198216",
+							"type": "text"
+						},
+						{
+							"key": "jeniskelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Roni",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Roni@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "npm",
+							"value": "232211111",
+							"type": "text"
+						},
+						{
+							"key": "telp",
+							"value": "098888",
+							"type": "text"
+						},
+						{
+							"key": "jeniskelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "jurusan",
+							"value": "Sistem Informasi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/students/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/students/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/students/delete/6278e5577137bae96d2753de",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						"delete",
+						"6278e5577137bae96d2753de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update data student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Adnan Darwanto",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "adnan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "npm",
+							"value": "15411061",
+							"type": "text"
+						},
+						{
+							"key": "telp",
+							"value": "08888",
+							"type": "text"
+						},
+						{
+							"key": "jurusan",
+							"value": "Informatika",
+							"type": "text"
+						},
+						{
+							"key": "jeniskelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/students/update/6262daf34ebdb3f185fc9b1e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						"update",
+						"6262daf34ebdb3f185fc9b1e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Gmabar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Asep Trisna Setiawan/Downloads/Untitled Diagram.drawio.png"
+						},
+						{
+							"key": "filename",
+							"value": "12323211112",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/files/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gambar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/1653131138473-6-21-4-2022.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"1653131138473-6-21-4-2022.png"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

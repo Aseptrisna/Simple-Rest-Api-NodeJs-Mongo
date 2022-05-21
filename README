@@ -8,7 +8,8 @@ Cors=https://www.npmjs.com/package/cors
 Bcrypt=https://www.npmjs.com/package/bcrypt
 Dotenv=https://www.npmjs.com/package/dotenv
 
-Setup
+Setup :
+setting file .env
 npm install
 npm start
 
@@ -21,3 +22,5 @@ Add Student Method POST=http://localhost:4000/students/add
 Get Student Method GET=http://localhost:4000/students/get
 Delete Student Method DELETE=http://localhost:4000/students/delete/:id
 Update Student Method PUT=http://localhost:4000/students/update/:id
+Upload Gambar Method POST=http://localhost:4000/students/update/:id
+Get Gambar Method POST=http://localhost:4000/nama-gambar
