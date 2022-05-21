@@ -25,6 +25,7 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: String
     },
+    
   
 })
 
