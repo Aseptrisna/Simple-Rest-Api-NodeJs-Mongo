@@ -5,4 +5,5 @@ const controller = require("../controller/image.controller")
 router.post("/upload", controller.upload);
 router.get("/get", controller.getListFiles);
 router.get("/files/:name", controller.download);
+
 module.exports = router;
