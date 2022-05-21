@@ -7,6 +7,7 @@ const Bcrypt = require("bcrypt");
  * */
 exports.signup = (data) =>
   new Promise((resolve, reject) => {
+    // console.log(data)
     UserModel.findOne({
       email: data.email,
     }).then((user) => {
